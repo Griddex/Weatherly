@@ -1,7 +1,8 @@
 import { IncomingMessage, ServerResponse } from "http";
 const parseUrl = require("url");
 const http = require("http");
-require("dotenv").config({ path: `${__dirname}/Application/config/.env` });
+require("dotenv").config({ path: `${__dirname}/Application/Config/.env` });
+const getWeatherService = require("./Weather/Services/Weather.Service");
 
 const port = process.env.PORT || 5000;
 const server = http.createServer(
@@ -10,6 +11,7 @@ const server = http.createServer(
     const urlObject = parseUrl?.parse(url, true);
     const query = urlObject.query;
     const id = query.id;
+    console.log("🚀 ~ file: Index.ts ~ line 14 ~ id", id);
 
     res.setHeader("Content-Type", "application/json");
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -23,9 +25,7 @@ const server = http.createServer(
     );
 
     if (url?.startsWith("/api/v1/weather")) {
-      console.log(id);
-      res.write("Weather");
-      res.end();
+      getWeatherService(res, id);
     } else if (url?.startsWith("/api/v1/forecast")) {
       res.write("Forecast");
       res.end();
