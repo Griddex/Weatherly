@@ -28,10 +28,12 @@ const getForecastService = async (res: ServerResponse, cityId: number) => {
   }
 
   const list = result.data.list as object[];
-  const data = streamlineForecastData(list);
+  const forecastData = streamlineForecastData(list);
 
-  res.write(JSON.stringify(data));
-  res.end();
+  sendResponse(res, 200, {
+    success: true,
+    data: forecastData,
+  });
 };
 
 module.exports = getForecastService;

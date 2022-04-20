@@ -27,8 +27,11 @@ const getWeatherService = async (res: ServerResponse, cityId: number) => {
     res.end();
   }
 
-  res.write(JSON.stringify(data));
-  res.end();
+  const { weather, main, visibility, wind } = data;
+  sendResponse(res, 200, {
+    success: true,
+    data: { weather, main, visibility, wind },
+  });
 };
 
 module.exports = getWeatherService;
