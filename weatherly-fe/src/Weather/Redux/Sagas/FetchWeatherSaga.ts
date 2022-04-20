@@ -20,6 +20,10 @@ function* fetchWeatherSaga(action: any): TGenerator {
 
   const api = (url: string) => axios.get(url);
   const result = yield retry(3, 1000, api, url);
+  console.log(
+    "🚀 ~ file: FetchWeatherSaga.ts ~ line 23 ~ function*fetchWeatherSaga ~ result",
+    result
+  );
   // const result = yield call(api, url);
 
   const { success } = result.data;

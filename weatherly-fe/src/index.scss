@@ -1,12 +1,16 @@
 @use "Application/app";
 @use "Application/Components/Banner/banner";
-@use "Weather/Routes/Weather/weather";
+@use "Weather/Routes/weather/weather";
 @use "Weather/Components/WeatherNow/weatherNow";
 @use "Weather/Components/WeatherMore/weatherMore";
 @use "Weather/Components/BasicWidget/basicWidget";
 @use "Weather/Components/WeatherCard/weatherCard";
 @use "Weather/Components/MultiWidget/multiWidget";
 @use "Weather/Components/WidgetValue/widgetValue";
+@use "Forecast/Components/Table/table";
+@use "Forecast/Components/Days/days";
+@use "Forecast/Routes/forecast";
+@use "Weather/Components/SelectCity/selectCity";
 
 * {
   box-sizing: border-box;

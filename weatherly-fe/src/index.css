@@ -188,6 +188,72 @@
   color: #9a9a9a;
 }
 
+.forecast {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem 1rem;
+}
+
+.lblForecast {
+  font-size: large;
+  font-weight: bold;
+}
+
+.btnForecast {
+  width: 8rem;
+  height: 2.5rem;
+  font-size: large;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+tr th {
+  background-color: gray;
+  color: white;
+  padding: 0.5rem;
+  height: 2.7rem;
+}
+tr td {
+  border-bottom: 1px solid #cdcdcd;
+  text-align: center;
+  height: 2.7rem;
+}
+
+.days {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 0.5rem;
+  font-family: inherit;
+  margin-top: 2rem;
+  margin: 0.5rem;
+}
+
+.forecast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.selectCity {
+  font-weight: bold;
+  font-size: large;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

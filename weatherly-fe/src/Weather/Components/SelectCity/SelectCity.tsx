@@ -30,7 +30,9 @@ const style: StylesConfig<TOption, false> = {
 const SelectCity = ({ selectedOption, options, handleSelect }: ISelectCity) => {
   return (
     <form data-testid="form">
-      <label htmlFor="city">Cities</label>
+      <label htmlFor="city" className="selectCity">
+        Cities
+      </label>
       <Select
         name="city"
         inputId="city"

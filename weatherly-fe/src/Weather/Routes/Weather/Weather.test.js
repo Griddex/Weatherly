@@ -1,7 +1,8 @@
-import { fireEvent } from "@testing-library/react";
+import { fireEvent, waitFor } from "@testing-library/react";
 import selectEvent from "react-select-event";
 import { render, screen } from "../../../Application/Utils/TestUtils";
 import Weather from "./Weather";
+import Forecast from "../../../Forecast/Routes/Forecast";
 import React from "react";
 
 describe("Weather route", () => {
@@ -42,5 +43,18 @@ describe("Weather route", () => {
     expect(queryByText(/Pressure/i)).toBeInTheDocument();
     expect(queryByText(/Humidity/i)).toBeInTheDocument();
     expect(queryByText(/Wind/i)).toBeInTheDocument();
+  });
+
+  it("should render  forecast button when city is selected", async () => {
+    const weatherRdr = render(<Weather />);
+    const forecastRdr = render(<Forecast />);
+
+    selectEvent.openMenu(weatherRdr.getByLabelText("Cities"));
+    fireEvent.click(weatherRdr.getByText("Toronto"));
+
+    expect(
+      await forecastRdr.findByText("Toronto's Weather Forecast")
+    ).toBeInTheDocument();
+    expect(await forecastRdr.findByRole("button")).toBeEnabled();
   });
 });

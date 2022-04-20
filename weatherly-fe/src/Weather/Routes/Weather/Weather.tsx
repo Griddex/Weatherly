@@ -14,6 +14,7 @@ import SelectCity from "../../Components/SelectCity/SelectCity";
 import { clearWeather, fetchWeather } from "../../Redux/RTK/WeatherSlice";
 import CityData from "../../Data/CityData";
 import { persistCityOption } from "../../../Application/Redux/ApplicationSlice";
+import { clearForecast } from "../../../Forecast/Redux/RTK/ForecastSlice";
 
 const WeatherNow = React.lazy(
   () => import("../../Components/WeatherNow/WeatherNow")
@@ -31,6 +32,10 @@ const Weather = () => {
   */
   const weatherSuccess = useSelector(
     (state: RootState) => state.weatherReducer.success
+  );
+  console.log(
+    "🚀 ~ file: Weather.tsx ~ line 35 ~ Weather ~ weatherSuccess",
+    weatherSuccess
   );
 
   /*
@@ -62,6 +67,7 @@ const Weather = () => {
 
   const clearStore = () => {
     dispatch(clearWeather());
+    dispatch(clearForecast());
   };
 
   /*
@@ -95,8 +101,6 @@ const Weather = () => {
       {!isSelectCity && weatherSuccess && <WeatherMore />}
     </div>
   );
-
-  // return <h1>Weather</h1>;
 };
 
 export default Weather;
