@@ -1,8 +1,9 @@
 import { IncomingMessage, ServerResponse } from "http";
 const parseUrl = require("url");
 const http = require("http");
+require("dotenv").config({ path: `${__dirname}/Application/config/.env` });
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 const server = http.createServer(
   (req: IncomingMessage, res: ServerResponse) => {
     const url = req.url;
@@ -31,4 +32,4 @@ const server = http.createServer(
     }
   }
 );
-server.listen(port, () => console.log(`Server running on port 5000`));
+server.listen(port, () => console.log(`Server running on port ${port}`));
