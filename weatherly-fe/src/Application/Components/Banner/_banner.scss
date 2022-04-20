@@ -1,0 +1,19 @@
+@use "../../app";
+
+.header {
+  font-size: 3rem;
+  width: 100vw;
+  padding: 2rem 0rem 6rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.io {
+  color: app.$primary-color;
+  font-size: 4rem;
+}
+
+.hello {
+  color: "red";
+}

@@ -1,7 +1,12 @@
 import React from "react";
+import Banner from "../Components/Banner/Banner";
 
 const Layout = () => {
-  return <div>Layout</div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 };
 
 export default Layout;
