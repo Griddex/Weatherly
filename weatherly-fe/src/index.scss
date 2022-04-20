@@ -1,5 +1,12 @@
 @use "Application/app";
 @use "Application/Components/Banner/banner";
+@use "Weather/Routes/Weather/weather";
+@use "Weather/Components/WeatherNow/weatherNow";
+@use "Weather/Components/WeatherMore/weatherMore";
+@use "Weather/Components/BasicWidget/basicWidget";
+@use "Weather/Components/WeatherCard/weatherCard";
+@use "Weather/Components/MultiWidget/multiWidget";
+@use "Weather/Components/WidgetValue/widgetValue";
 
 * {
   box-sizing: border-box;

@@ -1,0 +1,10 @@
+.weatherCard {
+  width: 20rem;
+  height: 12rem;
+  margin: 0.5rem;
+  box-shadow: 0rem 0rem 0.3rem grey;
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 350ms ease-in-out;
+  }
+}

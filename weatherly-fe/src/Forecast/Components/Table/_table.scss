@@ -1,0 +1,40 @@
+.forecast {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem 1rem;
+}
+
+.lblForecast {
+  font-size: large;
+  font-weight: bold;
+}
+
+.btnForecast {
+  width: 8rem;
+  height: 2.5rem;
+  font-size: large;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+tr {
+  th {
+    background-color: gray;
+    color: white;
+    padding: 0.5rem;
+    height: 2.7rem;
+  }
+  td {
+    border-bottom: 1px solid lighten(gray, 30%);
+    text-align: center;
+    height: 2.7rem;
+  }
+}

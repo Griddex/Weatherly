@@ -1,0 +1,29 @@
+.multiWidget {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.multiImg {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 40%;
+  padding: 1rem;
+}
+
+.multiTitleDesc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.multiTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+}
