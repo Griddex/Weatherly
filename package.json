@@ -1,0 +1,25 @@
+{
+  "name": "weatherly",
+  "version": "1.0.0",
+  "description": "Reliable weather forecasts!",
+  "main": "index.js",
+  "scripts": {
+    "start-be": "(cd weatherly-be && npm start)",
+    "start-fe": "(cd weatherly-fe && npm start)",
+    "start": "concurrently npm:start-be npm:start-fe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Griddex/Weatherly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Griddex/Weatherly/issues"
+  },
+  "homepage": "https://github.com/Griddex/Weatherly#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
