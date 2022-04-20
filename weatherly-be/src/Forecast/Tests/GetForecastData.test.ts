@@ -4,9 +4,6 @@ require("dotenv").config({ path: `${__dirname}/Application/config/.env` });
 describe("Forecast Service", () => {
   jest.mock("axios");
 
-  console.log(process.env.APPID);
-  console.log(process.env.APPBASEURL);
-
   const url =
     "http://api.openweathermap.org/data/2.5/forecast/?id=6167865&appid=538882fc8387290c6cee83f313a6acf5";
 
