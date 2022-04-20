@@ -1,3 +1,9 @@
+/**
+ * Transforms forecast data to table-by-unique-day object
+ * Returns forecast data, forecast table headers and unique forecast days
+ * @param {any} list forecast data from weather api
+ */
+
 const dateRegex = /\d{4}\-\d{2}\-\d{2}/;
 
 module.exports = (list: any) => {

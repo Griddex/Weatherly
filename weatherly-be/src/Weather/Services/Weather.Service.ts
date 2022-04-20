@@ -1,6 +1,14 @@
+/**
+ * Weather service to accept user request,
+ * call 3rd part weather api and return weather data
+ * @param {ServerResponse} res response object
+ * @param {number} cityId city id for weather data retrieval
+ */
+
 import { ServerResponse } from "http";
 const getUrl = require("../../Application/config/urls");
 const getData = require("../../Application/utils/getData");
+const sendResponse = require("../../Application/utils/sendResponse");
 
 const getWeatherService = async (res: ServerResponse, cityId: number) => {
   const weatherUrl = getUrl("weather", cityId);
@@ -8,8 +16,7 @@ const getWeatherService = async (res: ServerResponse, cityId: number) => {
 
   if (!result.success) {
     const { error } = result;
-    res.write(error);
-    res.end();
+    sendResponse(res, res.statusCode, (error as Record<string, any>).message);
   }
 
   const { data } = result;

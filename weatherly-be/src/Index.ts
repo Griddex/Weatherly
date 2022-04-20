@@ -28,6 +28,9 @@ const server = http.createServer(
       getWeatherService(res, id);
     } else if (url?.startsWith("/api/v1/forecast")) {
       getForecastService(res, id);
+    } else {
+      res.writeHead(404).write("Not found");
+      res.end();
     }
   }
 );
