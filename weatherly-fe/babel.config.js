@@ -1,20 +1,28 @@
-module.exports = {
-  presets: [
-    ["@babel/preset-env", { targets: { node: "current" } }],
-    [
-      "@babel/preset-react",
-      {
-        runtime: "automatic",
-      },
+module.exports = (api) => {
+  const isTest = api.env("test");
+  api.cache(true);
+
+  return {
+    presets: [
+      [
+        "@babel/preset-env",
+        { targets: { node: "current" }, modules: isTest ? "commonjs" : false },
+      ],
+      [
+        "@babel/preset-react",
+        {
+          runtime: "automatic",
+        },
+      ],
+      "@babel/preset-typescript",
     ],
-    "@babel/preset-typescript",
-  ],
-  plugins: [
-    [
-      "@babel/plugin-transform-runtime",
-      {
-        regenerator: true,
-      },
+    plugins: [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          regenerator: true,
+        },
+      ],
     ],
-  ],
+  };
 };

@@ -3,6 +3,7 @@
     "target": "es5",
     "module": "esnext",
     "rootDir": "src",
+    "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -11,7 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": false,
     "noEmitOnError": true,
     "jsx": "react-jsx",
@@ -22,5 +23,5 @@
     "removeComments": true
   },
   "include": ["src", "custom.d.ts"],
-  "exclude": ["node_modules", "dist", "**/*.test.js", "**/*.test.ts", "**/*.js"]
+  "exclude": ["node_modules", "dist", "lib"]
 }

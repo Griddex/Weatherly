@@ -3,4 +3,6 @@ const { handlers } = require("./handlers");
 
 const server = setupServer(...handlers);
 
-module.exports = { server };
+// module.exports = { server };
+
+export { server };

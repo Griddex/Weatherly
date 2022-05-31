@@ -1,0 +1,801 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/gideonsanni/Desktop/Weatherly/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "/Users/gideonsanni/Desktop/Weatherly/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/gideonsanni/Desktop/Weatherly/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "firefox",
+        "testDir": "/Users/gideonsanni/Desktop/Weatherly/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/gideonsanni/Desktop/Weatherly/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "webkit",
+        "testDir": "/Users/gideonsanni/Desktop/Weatherly/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/gideonsanni/Desktop/Weatherly/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "smoke",
+        "testDir": "/Users/gideonsanni/Desktop/Weatherly/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*smoke.spec.ts/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "weather-test.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "/Users/gideonsanni/Desktop/Weatherly/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.22.2",
+    "workers": 10,
+    "webServer": null,
+    "_globalOutputDir": "/Users/gideonsanni/Desktop/Weatherly",
+    "_configDir": "/Users/gideonsanni/Desktop/Weatherly",
+    "_testGroupsCount": 15
+  },
+  "suites": [
+    {
+      "title": "weather.spec.ts",
+      "file": "weather.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Display weather summary and weather cards",
+          "file": "weather.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display only banner and select city dropdown on initial page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4656,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-chromium/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-chromium/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "should successfully select a city and display weather info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 5003,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-chromium/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-chromium/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "should select a city, display weather cards for city and display forecast data on clicking show button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 5533,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-chromium/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-chromium/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 45,
+              "column": 3
+            },
+            {
+              "title": "pagination buttons render the associated forecast table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 3573,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-chromium/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-chromium/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 115,
+              "column": 3
+            },
+            {
+              "title": "weather api should return data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 4040,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-chromium/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-chromium/trace.zip"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-chromium/trace-1.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 117,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Display weather summary and weather cards",
+          "file": "weather.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display only banner and select city dropdown on initial page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 5090,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-firefox/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-firefox/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-firefox/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "should successfully select a city and display weather info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 5652,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-firefox/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-firefox/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-firefox/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "should select a city, display weather cards for city and display forecast data on clicking show button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "status": "passed",
+                      "duration": 6063,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-firefox/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-firefox/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-firefox/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 45,
+              "column": 3
+            },
+            {
+              "title": "pagination buttons render the associated forecast table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 4798,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-firefox/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-firefox/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-firefox/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 115,
+              "column": 3
+            },
+            {
+              "title": "weather api should return data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "status": "passed",
+                      "duration": 5095,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-firefox/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-firefox/trace.zip"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-firefox/trace-1.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-firefox/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 117,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Display weather summary and weather cards",
+          "file": "weather.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display only banner and select city dropdown on initial page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "status": "passed",
+                      "duration": 1411,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-webkit/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-webkit/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-88adc-r-and-select-city-dropdown-on-initial-page-load-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "should successfully select a city and display weather info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "status": "passed",
+                      "duration": 1942,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-webkit/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-webkit/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-3039a-essfully-select-a-city-and-display-weather-info-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "should select a city, display weather cards for city and display forecast data on clicking show button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "status": "passed",
+                      "duration": 2200,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-webkit/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-webkit/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-43365-d-display-forecast-data-on-clicking-show-button-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 45,
+              "column": 3
+            },
+            {
+              "title": "pagination buttons render the associated forecast table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "status": "passed",
+                      "duration": 842,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-webkit/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-webkit/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 115,
+              "column": 3
+            },
+            {
+              "title": "weather api should return data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "status": "passed",
+                      "duration": 1071,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-webkit/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-webkit/trace.zip"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-webkit/trace-1.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-cards-weather-api-should-return-data-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 117,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

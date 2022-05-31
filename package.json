@@ -6,7 +6,8 @@
   "scripts": {
     "start-be": "(cd weatherly-be && npm start)",
     "start-fe": "(cd weatherly-fe && npm start)",
-    "start": "concurrently npm:start-be npm:start-fe"
+    "start": "concurrently npm:start-be npm:start-fe",
+    "test": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,13 @@
   },
   "homepage": "https://github.com/Griddex/Weatherly#readme",
   "dependencies": {
-    "concurrently": "^7.1.0"
+    "concurrently": "^7.1.0",
+    "lodash.uniq": "^4.5.0",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.22.2",
+    "@types/express": "^4.17.13",
+    "@types/lodash.uniq": "^4.5.7"
   }
 }

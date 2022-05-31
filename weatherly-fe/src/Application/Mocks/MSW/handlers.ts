@@ -2,10 +2,10 @@ import { rest } from "msw";
 import { weatherData, forecastData } from "../../Data/TestData";
 
 const handlers = [
-  rest.get("http://localhost:5000/api/v1/weather/", (req, res, ctx) => {
+  rest.get("http://localhost:3000/api/v1/weather/", (req, res, ctx) => {
     return res(ctx.status(200), ctx.json({ success: true, data: weatherData }));
   }),
-  rest.get("http://localhost:5000/api/v1/forecast/", (req, res, ctx) => {
+  rest.get("http://localhost:3000/api/v1/forecast/", (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({ success: true, data: forecastData })
