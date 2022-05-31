@@ -1,5 +1,5 @@
-module.exports = (name: string, id: string) => {
+module.exports = (name: string, q: string) => {
   const { APPID, APPBASEURL } = process.env;
 
-  return `${APPBASEURL}/${name}?id=${id}&appid=${APPID}`;
+  return `${APPBASEURL}/${name}?q=${q}&appid=${APPID}`;
 };

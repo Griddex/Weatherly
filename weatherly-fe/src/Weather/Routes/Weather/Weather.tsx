@@ -33,10 +33,6 @@ const Weather = () => {
   const weatherSuccess = useSelector(
     (state: RootState) => state.weatherReducer.success
   );
-  console.log(
-    "🚀 ~ file: Weather.tsx ~ line 35 ~ Weather ~ weatherSuccess",
-    weatherSuccess
-  );
 
   /*
    Memoize city data in a useRef

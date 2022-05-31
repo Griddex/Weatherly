@@ -16,15 +16,11 @@ export default function* watchFetchWeatherSaga(): TWatchGenerator {
 }
 
 function* fetchWeatherSaga(action: any): TGenerator {
-  const url = `${baseUrl}/weather/?id=${action.payload.id}`;
+  const url = `${baseUrl}/weather/?q=${action.payload.name},${action.payload.country}`;
 
   const api = (url: string) => axios.get(url);
-  const result = yield retry(3, 1000, api, url);
-  console.log(
-    "🚀 ~ file: FetchWeatherSaga.ts ~ line 23 ~ function*fetchWeatherSaga ~ result",
-    result
-  );
-  // const result = yield call(api, url);
+  // const result = yield retry(3, 1000, api, url);
+  const result = yield call(api, url);
 
   const { success } = result.data;
 

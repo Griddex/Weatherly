@@ -22,15 +22,15 @@ export default function* watchFetchForecastSaga(): TWatchGenerator {
 }
 
 function* fetchForecastSaga(): TGenerator {
-  const id = yield select(
-    (state: RootState) => state.applicationReducer.selectedCityOption.id
+  const { name, country } = yield select(
+    (state: RootState) => state.applicationReducer.selectedCityOption
   );
 
-  const url = `${baseUrl}/forecast/?id=${id}`;
+  const url = `${baseUrl}/forecast/?q=${name},${country}`;
 
   const api = (url: string) => axios.get(url);
   const result = yield retry(3, 1000, api, url);
-  // const result = yield call(api, url);
+
   const { success } = result.data;
 
   if (success) {

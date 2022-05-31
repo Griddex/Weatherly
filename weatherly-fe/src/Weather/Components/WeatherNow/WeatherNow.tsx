@@ -15,10 +15,6 @@ const WeatherNow = () => {
   const weather = useSelector(
     (state: RootState) => state.weatherReducer.data.weather
   );
-  console.log(
-    "🚀 ~ file: WeatherNow.tsx ~ line 18 ~ WeatherNow ~ weather",
-    weather
-  );
 
   /*
    Parse weather, title and desciption

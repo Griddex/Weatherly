@@ -1,12 +1,12 @@
 /**
- * Board showing application name
+ * Header banner showing application name
  */
 
 import React from "react";
 
 const Banner = () => {
   return (
-    <header className="header">
+    <header className="header" role="banner">
       Weatherly<span className="io">.IO</span>
     </header>
   );
