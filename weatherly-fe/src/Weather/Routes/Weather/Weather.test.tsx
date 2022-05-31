@@ -6,7 +6,7 @@ import Forecast from "../../../Forecast/Routes/Forecast";
 import React from "react";
 
 describe("Weather route", () => {
-  it("on first render, should have default city option", async () => {
+  it("should have default city option on first render", async () => {
     render(<Weather />);
     expect(await screen.findByText("Select City")).toBeInTheDocument();
   });
