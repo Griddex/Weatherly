@@ -1,0 +1,48 @@
+name: Run tests
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.14]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache Node depedencies
+        uses: actions/cache@v2
+        with:
+          path: ./node_modules
+          key: v1-npm-dependencies-${{ hashFiles('./package-lock.json') }}
+          restore-keys: v1-npm-dependencies-
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          always-auth: true
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://npm.pkg.github.com/
+          scope: '@quantifica'
+
+      - name: Install dependencies
+        run: |
+          npm i
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
+
+      # - name: Lint codebase
+      #   run: npm run lint
+
+      - name: Run tests
+        run: |
+          npm test

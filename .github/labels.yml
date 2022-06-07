@@ -1,0 +1,36 @@
+# https://github.com/marketplace/actions/label-syncer
+
+- name: 'type: fix'
+  color: ee0701
+- name: 'type: feature'
+  color: 84b6eb
+- name: 'type: build'
+  color: fef2c0
+- name: 'type: chore'
+  color: fef2c0
+- name: 'type: ci'
+  color: fef2c0
+- name: 'type: documentation'
+  color: d4c5f9
+- name: 'type: style'
+  color: fef2c0
+- name: 'type: refactor'
+  color: ff7619
+- name: 'type: performance'
+  color: e99695
+- name: 'type: testing'
+  color: bfe5bf
+- name: 'type: breaking'
+  color: bcf5db
+- name: 'stale'
+  color: eeeeee
+- name: 'duplicate'
+  color: eeeeee
+- name: 'wip'
+  color: eeeeee
+- name: 'wontfix'
+  color: eeeeee
+- name: 'unmergeable'
+  color: eeeeee
+- name: 'mergeable'
+  color: 0e8a16

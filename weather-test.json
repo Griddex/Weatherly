@@ -85,7 +85,7 @@
     "webServer": null,
     "_globalOutputDir": "/Users/gideonsanni/Desktop/Weatherly",
     "_configDir": "/Users/gideonsanni/Desktop/Weatherly",
-    "_testGroupsCount": 15
+    "_testGroupsCount": 18
   },
   "suites": [
     {
@@ -115,7 +115,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4466,
+                      "duration": 3958,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -159,7 +159,7 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 5144,
+                      "duration": 3748,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -203,7 +203,7 @@
                     {
                       "workerIndex": 2,
                       "status": "passed",
-                      "duration": 5787,
+                      "duration": 4795,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -234,7 +234,7 @@
               "column": 3
             },
             {
-              "title": "pagination buttons render the associated forecast table",
+              "title": "clicking pagination buttons apply the correct styles",
               "ok": true,
               "tags": [],
               "tests": [
@@ -247,7 +247,7 @@
                     {
                       "workerIndex": 3,
                       "status": "passed",
-                      "duration": 4098,
+                      "duration": 4914,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -255,17 +255,17 @@
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-chromium/video.webm"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-chromium/video.webm"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-chromium/trace.zip"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-chromium/trace.zip"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-chromium/test-finished-1.png"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -275,6 +275,50 @@
               ],
               "file": "weather.spec.ts",
               "line": 115,
+              "column": 3
+            },
+            {
+              "title": "clicking pagination buttons render the associated forecast table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 4108,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-chromium/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-chromium/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 147,
               "column": 3
             },
             {
@@ -289,9 +333,9 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 5,
                       "status": "passed",
-                      "duration": 4649,
+                      "duration": 3877,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -323,7 +367,7 @@
                 }
               ],
               "file": "weather.spec.ts",
-              "line": 117,
+              "line": 170,
               "column": 3
             }
           ]
@@ -346,9 +390,9 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 6,
                       "status": "passed",
-                      "duration": 4640,
+                      "duration": 4478,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -390,9 +434,9 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 7,
                       "status": "passed",
-                      "duration": 5274,
+                      "duration": 5019,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -434,9 +478,9 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 8,
                       "status": "passed",
-                      "duration": 5586,
+                      "duration": 6447,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -467,7 +511,7 @@
               "column": 3
             },
             {
-              "title": "pagination buttons render the associated forecast table",
+              "title": "clicking pagination buttons apply the correct styles",
               "ok": true,
               "tags": [],
               "tests": [
@@ -478,9 +522,9 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 9,
                       "status": "passed",
-                      "duration": 4699,
+                      "duration": 6782,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -488,17 +532,17 @@
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-firefox/video.webm"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-firefox/video.webm"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-firefox/trace.zip"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-firefox/trace.zip"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-firefox/test-finished-1.png"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-firefox/test-finished-1.png"
                         }
                       ]
                     }
@@ -508,6 +552,50 @@
               ],
               "file": "weather.spec.ts",
               "line": 115,
+              "column": 3
+            },
+            {
+              "title": "clicking pagination buttons render the associated forecast table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "status": "passed",
+                      "duration": 3105,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-firefox/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-firefox/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-firefox/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 147,
               "column": 3
             },
             {
@@ -522,9 +610,9 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 9,
+                      "workerIndex": 12,
                       "status": "passed",
-                      "duration": 4809,
+                      "duration": 2135,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -556,7 +644,7 @@
                 }
               ],
               "file": "weather.spec.ts",
-              "line": 117,
+              "line": 170,
               "column": 3
             }
           ]
@@ -579,9 +667,9 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 14,
                       "status": "passed",
-                      "duration": 1355,
+                      "duration": 1284,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -623,9 +711,9 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 13,
                       "status": "passed",
-                      "duration": 1489,
+                      "duration": 1887,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -667,9 +755,9 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 12,
+                      "workerIndex": 11,
                       "status": "passed",
-                      "duration": 1677,
+                      "duration": 2534,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -700,7 +788,7 @@
               "column": 3
             },
             {
-              "title": "pagination buttons render the associated forecast table",
+              "title": "clicking pagination buttons apply the correct styles",
               "ok": true,
               "tags": [],
               "tests": [
@@ -711,9 +799,9 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 16,
                       "status": "passed",
-                      "duration": 576,
+                      "duration": 2258,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -721,17 +809,17 @@
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-webkit/video.webm"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-webkit/video.webm"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-webkit/trace.zip"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-webkit/trace.zip"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-350ea-on-buttons-render-the-associated-forecast-table-webkit/test-finished-1.png"
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-d1ec5-ing-pagination-buttons-apply-the-correct-styles-webkit/test-finished-1.png"
                         }
                       ]
                     }
@@ -741,6 +829,50 @@
               ],
               "file": "weather.spec.ts",
               "line": 115,
+              "column": 3
+            },
+            {
+              "title": "clicking pagination buttons render the associated forecast table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "status": "passed",
+                      "duration": 1250,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-webkit/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-webkit/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gideonsanni/Desktop/Weatherly/test-results/weather-Display-weather-summary-and-weather-ca-a2cd1-on-buttons-render-the-associated-forecast-table-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "weather.spec.ts",
+              "line": 147,
               "column": 3
             },
             {
@@ -755,9 +887,9 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 15,
                       "status": "passed",
-                      "duration": 865,
+                      "duration": 1468,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
@@ -789,7 +921,7 @@
                 }
               ],
               "file": "weather.spec.ts",
-              "line": 117,
+              "line": 170,
               "column": 3
             }
           ]

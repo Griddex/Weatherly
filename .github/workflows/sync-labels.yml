@@ -1,0 +1,17 @@
+# https://github.com/marketplace/actions/label-syncer
+
+name: Sync labels
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync_labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

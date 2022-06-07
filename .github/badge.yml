@@ -1,0 +1,13 @@
+# https://github.com/marketplace/auto-badge
+
+types:
+  fix: 'type: fix'
+  feat: 'type: feature'
+  build: 'type: build'
+  chore: 'type: chore'
+  ci: 'type: ci'
+  docs: 'type: documentation'
+  style: 'type: style'
+  refactor: 'type: refactor'
+  perf: 'type: performance'
+  test: 'type: testing'

@@ -1,13 +1,14 @@
 {
-  "name": "weatherly",
+  "name": "tool-e2e-poc",
   "version": "1.0.0",
   "description": "Reliable weather forecasts!",
   "main": "index.js",
   "scripts": {
-    "start-be": "(cd weatherly-be && npm start)",
-    "start-fe": "(cd weatherly-fe && npm start)",
-    "start": "concurrently npm:start-be npm:start-fe",
-    "test": "playwright test"
+    "start-be": "sh -ac '(cd weatherly-be && npm start)'",
+    "start-fe": "sh -ac '(cd weatherly-fe && npm start)'",
+    "start": "sh -ac 'concurrently npm:start-be npm:start-fe'",
+    "test": "sh -ac 'npx playwright test'",
+    "compile": "tsc"
   },
   "repository": {
     "type": "git",
