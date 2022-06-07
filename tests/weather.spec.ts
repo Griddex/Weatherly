@@ -64,7 +64,7 @@ test.describe("Display weather summary and weather cards", () => {
     await expect(frcstBtn).toBeVisible();
 
     //Click show Forecast button
-    frcstBtn.click();
+    await frcstBtn.click();
 
     //Forecast button is inaactive
     expect(frcstBtn).toBeDisabled();
@@ -103,7 +103,7 @@ test.describe("Display weather summary and weather cards", () => {
 
     //Forecast table pagination is present with expected number of controls
     const pgtnBtns = page.locator(".days button");
-    await expect(await pgtnBtns.count()).toBe(6);
+    await expect(await pgtnBtns.count()).toBeLessThanOrEqual(6);
 
     //Forecast table pagination displays correct dates
     const pgtnBtnsTexts = await pgtnBtns.allTextContents();
@@ -112,7 +112,60 @@ test.describe("Display weather summary and weather cards", () => {
     await expect(uniqChecks).toEqual([true]);
   });
 
-  test("pagination buttons render the associated forecast table", () => {});
+  test("clicking pagination buttons apply the correct styles", async ({
+    page,
+  }) => {
+    //Click on Select city dropdown
+    await page.locator('form:has-text("Select City")').click();
+
+    //Select Toronto city
+    await page.locator("text=Toronto").click();
+
+    //Click show Forecast button
+    const frcstBtn = page.locator(".btnForecast");
+    await frcstBtn.click();
+
+    //Check first button initial style & on click
+    const firstBtn = page.locator(".days button").nth(0);
+    await expect(firstBtn).toHaveCSS(
+      "background-color",
+      "rgba(255, 0, 0, 0.88)"
+    );
+    await expect(firstBtn).toHaveCSS("color", "rgb(255, 255, 255)");
+
+    //Check 2nd button initial style
+    const scndBtn = page.locator(".days button").nth(1);
+
+    //Check 2nd button  style  on click
+    await scndBtn.click();
+    await expect(scndBtn).toHaveCSS(
+      "background-color",
+      "rgba(255, 0, 0, 0.88)"
+    );
+    await expect(scndBtn).toHaveCSS("color", "rgb(255, 255, 255)");
+  });
+  test("clicking pagination buttons render the associated forecast table", async ({
+    page,
+  }) => {
+    //Click on Select city dropdown
+    await page.locator('form:has-text("Select City")').click();
+
+    //Select Toronto city
+    await page.locator("text=Toronto").click();
+
+    //Click show Forecast button
+    const frcstBtn = page.locator(".btnForecast");
+    await frcstBtn.click();
+
+    const firstRowValuesStrArr = [];
+    const noOfBtns = await page.locator(".days button").count();
+    for (let i = 0; i < noOfBtns; i++) {
+      const btn = page.locator(".days button").nth(i);
+      firstRowValuesStrArr.push((await btn.allTextContents()).join());
+    }
+
+    await expect(noOfBtns).toBe(uniq(firstRowValuesStrArr).length);
+  });
 
   test("weather api should return data", async ({ request }) => {
     const url = `${baseUrl}/weather/?q=Calgary,CA`;
